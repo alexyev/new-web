@@ -2,20 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Figure out a good color scheme for website */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Figure out a good color scheme for website */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #14223a;
+    --foreground: #f2e9e4;
   }
 }
 
+
+/* Figure out a good, classy font */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-lora) Arial, Helvetica, sans-serif;
 }

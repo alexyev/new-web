@@ -9,6 +9,18 @@ const projects = [
         link: "https://www.culturafarms.ca/landing.html"
     },
     {
+        title: "Collimator",
+        description: "I host a podcast with Unmol Sharma. We've featured over 30 professors, investors, and founders from across a variety of industries, focusing on exposing young people to the future of technology and how to make an impact in the world.",
+        imageUrl: "/projects/collimator.png",
+        link: "https://open.spotify.com/show/0CkPu2vTedCtzkTT8vDegj?si=bf253a16ac844ede" 
+    },
+    {
+        title: "YouTube",
+        description: "I post a variety of educational videos, ranging from talks I've given to projects that I've built. Topics include quantum computing, tackling specific issues in world hunger, and what I've learned from life as a young adult.",
+        imageUrl: "/projects/yt.png",
+        link: "https://www.youtube.com/@alexanderyevchenko" 
+    },
+    {
         title: "Clara",
         description: "HackPrinecton '24. Addressing over 16 million failed US visa applications, Clara is an interactive coach that helps ace your interviews, answer questions about the immigration process, and find resources. Conversant in more than 40 languages.",
         imageUrl: "/projects/clara.jpg",
@@ -27,10 +39,22 @@ const projects = [
         link: "https://www.thecatherinewheel.co/" 
     },
     {
+        title: "Issues in Global Hunger: Tackling Corn Disease",
+        description: "Worked on Global Hunger from a first-principles basis, and identified corn disease in advanced and developing nations as an important factor to alleviating food supply pressures. Created a CV algorithm for flyover drones to identify and treat disease as soon as it happens.",
+        imageUrl: "/projects/cd.webp",
+        link: "https://medium.com/@alexanderyevchenko/the-global-food-crisis-addressing-corn-disease-with-computer-vision-74edc76e949"
+    },
+    {
         title: "brAInstorm",
         description: "HackTheNorth '24 Winner. Created a BCI that analyzed brainwaves for feeling, and fed the outputs into an generative model that created artwork based on emotion.",
         imageUrl: "/projects/HTN.png",
         link: "https://youtu.be/r3z1rB29ZLU?si=d9o9UkN0tJxpzoO4"
+    },
+    {
+        title: "GPT from Scratch",
+        description: "Re-Built a Shakesperean LLM from scratch thanks to Andrej Karpathy. Learned a great deal about how GPTs work under the hood.",
+        imageUrl: "/projects/gpt.jpg",
+        link: "https://github.com/alexyev/gpt-from-scratch"
     },
     {
         title: "Student Consulting",

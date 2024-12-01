@@ -46,7 +46,7 @@ const projects = [
     },
     {
         title: "brAInstorm",
-        description: "HackTheNorth '24 Winner. Created a BCI that analyzed brainwaves for feeling, and fed the outputs into an generative model that created artwork based on emotion.",
+        description: "HackTheNorth '22 Winner. Created a BCI that analyzed brainwaves for feeling, and fed the outputs into an generative model that created artwork based on emotion.",
         imageUrl: "/projects/HTN.png",
         link: "https://youtu.be/r3z1rB29ZLU?si=d9o9UkN0tJxpzoO4"
     },

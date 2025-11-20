@@ -25,16 +25,14 @@ export default function Home() {
               <Image
                 src="/profile.jpg"
                 alt="Profile photo"
-                width={175}
-                height={175}
+                width={225}
+                height={225}
                 className="rounded-lg mb-6"
               />
               <p className="text-sm opacity-80 text-center lg:text-left">
-                Eighteen. <a href="https://www.moreheadcain.org/" className="hover:text-[#c9ada7] transition-colors duration-300 cursor-pointer">
-                  Morehead-Cain Scholar
-                </a> at<br/>
-                The University of North Carolina at Chapel Hill.<br/>
-                Computer Science.
+                Computer Science + Business + Physics <br/>
+                Morehead-Cain '28 <br/>
+                University of North Carolina at Chapel Hill
               </p>
             </div>
             
@@ -42,7 +40,7 @@ export default function Home() {
               <h2 className="text-xl font-medium">Contact</h2>
               <div className="text-sm opacity-80 space-y-1 mb-2">
                 <p>alexanderyevchenko[at]gmail[dot]com</p>
-                <p>Chapel Hill // Toronto // Earth</p>
+                <p>Chapel Hill + Toronto </p>
                 <div className="flex justify-center lg:justify-start gap-5 pt-2">
                 <div className="flex gap-5 pt-2">
                   <a href="https://www.linkedin.com/in/alexanderyevchenko/" target="_blank" rel="noopener noreferrer">

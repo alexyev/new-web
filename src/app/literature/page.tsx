@@ -28,7 +28,8 @@ const books = [
   { title: "The Lord of the Rings", author: "J. R. R. Tolkien", isbn: "9780618640157" }, // Mariner Books
   { title: "Meditations", author: "Marcus Aurelius", isbn: "9780140449334" }, // Penguin Classics
   { title: "No Longer Human", author: "Osamu Dazai", isbn: "9780811204811" }, // New Directions
-  { title: "Norwegian Wood", author: "Haruki Murakami", isbn: "9780307744661" }, // Vintage (Penguin Random House)
+  { title: "Norwegian Wood", author: "Haruki Murakami", isbn: "9780307744661" },
+  { title: "Of Human Bondage", author: "W. Somerset Maugham", isbn: "9780553213928" }, // Vintage (Penguin Random House)
   { title: "On the Road", author: "Jack Kerouac", isbn: "9780140283297" }, // Penguin Classics
   { title: "The Picture of Dorian Gray", author: "Oscar Wilde", isbn: "9780141439570" }, // Penguin Classics
   { title: "Play It As It Lays", author: "Joan Didion", isbn: "9780374529949" }, // Fourth Estate / Farrar, Straus and Giroux

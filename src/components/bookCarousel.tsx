@@ -19,6 +19,11 @@ const getLocalBookCover = (book: Book): string => {
   if (book.title === "Demian" && book.author.includes("Hesse")) {
     return "/books/demian.jpeg";
   }
+  
+  // Special override for Of Human Bondage
+  if (book.title === "Of Human Bondage" && book.author.includes("Maugham")) {
+    return "/books/of-human-bondage.jpeg";
+  }
 
   // Convert title to kebab-case-like slug
   // 1. Lowercase

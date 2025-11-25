@@ -11,7 +11,7 @@ export default function Home() {
         <SidebarSection />
         {/* Main content */}
         <section className="w-full lg:w-[75%] mt-8 lg:mt-0">
-                <h1 className="text-4xl mb-4 text-center lg:text-left">Snapshots of my life...</h1>
+                <h1 className="text-4xl mb-4 text-center lg:text-left">Snapshots of my Life</h1>
                 <div className="h-full flex flex-col items-center lg:items-start">
                     <PhotoGrid
                         title="Princeton and New York"

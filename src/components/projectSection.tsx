@@ -4,69 +4,81 @@ import Link from 'next/link';
 const projects = [
     {
         title: "Cultura",
-        description: "Co-founded an app delivering crop phenology, financial, and weather tools to small-scale Ontario farmers. Originally started as a hackathon idea, which went on to place in Buildspace's S5 Top 32 projects. Received recognition and funding from Emergent Ventures, Ingenious+, and The Iris Project.",
+        description: "Co-founded an app delivering crop phenology and financial tools to small-scale farmers. Started as a hackathon project, placed in Buildspace's S5 Top 32, and received backing from Emergent Ventures and The Iris Project.",
         imageUrl: "/projects/cultura.jpg",
-        link: "https://www.culturafarms.ca/landing.html"
+        
     },
     {
-        title: "Collimator",
-        description: "I host a podcast with Unmol Sharma. We've featured over 30 professors, investors, and founders from across a variety of industries, focusing on exposing young people to the future of technology and how to make an impact in the world.",
-        imageUrl: "/projects/collimator.png",
-        link: "https://open.spotify.com/show/0CkPu2vTedCtzkTT8vDegj?si=bf253a16ac844ede" 
+        title: "Venture Capital @ The Catherine Wheel",
+        description: "Interned at a Toronto-based advisory fund. Worked with pre-seed and seed-stage founders to refine their models and pitched potential investments to partners, sourced funding from LPs.",
+        imageUrl: "/projects/tcw.gif",
+        link: "https://www.thecatherinewheel.co/" 
     },
     {
-        title: "YouTube",
-        description: "I post a variety of educational videos, ranging from talks I've given to projects that I've built. Topics include quantum computing, tackling specific issues in world hunger, and what I've learned from life as a young adult.",
-        imageUrl: "/projects/yt.png",
-        link: "https://www.youtube.com/@alexanderyevchenko" 
+        title: "Student Consulting @ IKEA & CAE",
+        description: "Consulted for IKEA on Gen Z market adaptation and CAE on product expansion. Developed strategies and presented recommendations directly to executive leadership.",
+        imageUrl: "/projects/consult.jpg",
+        link: ""
+    },
+    {
+        title: "Philanthropy Strategy @ Middendorf Foundation",
+        description: "Led a research initiative on Education Capital Projects in Baltimore. Conducted 47 interviews and utilized sentiment analysis to produce a report for major foundations with $3B+ AUM, outlining strategies to better support nonprofit development.",
+        imageUrl: "/projects/middendorf.jpeg",
+        link: "https://www.middendorffoundation.org/"
     },
     {
         title: "Clara",
-        description: "HackPrinecton '24. Addressing over 16 million failed US visa applications, Clara is an interactive coach that helps ace your interviews, answer questions about the immigration process, and find resources. Conversant in more than 40 languages.",
+        description: "HackPrinceton '24 project addressing high visa rejection rates. Built an interactive, multilingual AI coach to help applicants prepare for interviews and navigate the immigration process.",
+        imageUrl: "/projects/clara.jpg",
+        link: "https://www.claraprep.co/" 
+    },
+    {
+        title: "AceGlass",
+        description: "HoyaHacks '25 (Georgetown) AceGlass are the ultimate pair of interactive poker glasses, with live winning percentages and betting strategies, keeping you on point with every hand.",
         imageUrl: "/projects/clara.jpg",
         link: "https://www.claraprep.co/" 
     },
     {
         title: "UNC Applied Engineering Lab",
-        description: "Working with Jim Mahaney, Sofia Morais, and the Exercise Science Department to create a hand-movement tracking glove to optimize swimmer hand positioning.",
+        description: "Collaborating with researchers to develop a hand-movement tracking glove, designed to optimize swimmer hand positioning and improve performance mechanics.",
         imageUrl: "/projects/AEL.jpg",
         link: "https://www.unc.edu/posts/2024/08/06/tar-heel-experts-unlock-science-behind-swimming/" 
     },
     {
-        title: "The Catherine Wheel",
-        description: "Interned at a Toronto-based Advisory Fund. Engaged directly with pre-seed and seed stage founders, gained insight on company building from the ground up, and pitched GPs potential investment opportunities.",
-        imageUrl: "/projects/tcw.gif",
-        link: "https://www.thecatherinewheel.co/" 
+        title: "GPT from Scratch",
+        description: "Rebuilt a Shakespearean LLM to understand the architecture of GPT models, following Andrej Karpathy’s curriculum.",
+        imageUrl: "/projects/gpt.jpg",
+        link: "https://github.com/alexyev/gpt-from-scratch"
     },
     {
-        title: "Issues in Global Hunger: Tackling Corn Disease",
-        description: "Worked on Global Hunger from a first-principles basis, and identified corn disease in advanced and developing nations as an important factor to alleviating food supply pressures. Created a CV algorithm for flyover drones to identify and treat disease as soon as it happens.",
+        title: "Issues in Global Hunger",
+        description: "Researched food supply pressures from a first-principles perspective. Developed a computer vision algorithm for drones to identify and treat corn disease in real-time.",
         imageUrl: "/projects/cd.webp",
         link: "https://medium.com/@alexanderyevchenko/the-global-food-crisis-addressing-corn-disease-with-computer-vision-74edc76e949"
     },
     {
         title: "brAInstorm",
-        description: "HackTheNorth '22 Winner. Created a BCI that analyzed brainwaves for feeling, and fed the outputs into an generative model that created artwork based on emotion.",
+        description: "HackTheNorth '22 Winner. Built a BCI that interprets brainwaves to generate artwork reflecting the user's emotional state.",
         imageUrl: "/projects/HTN.png",
         link: "https://youtu.be/r3z1rB29ZLU?si=d9o9UkN0tJxpzoO4"
     },
     {
-        title: "GPT from Scratch",
-        description: "Re-Built a Shakesperean LLM from scratch thanks to Andrej Karpathy. Learned a great deal about how GPTs work under the hood.",
-        imageUrl: "/projects/gpt.jpg",
-        link: "https://github.com/alexyev/gpt-from-scratch"
-    },
-    {
-        title: "Student Consulting",
-        description: "Consulted with IKEA group on revitalizing big-box stores and adapting to the changing needs of Gen Z, and with CAE on applying their existing products to new markets. Constructed standalone slide decks and pitched directly to VP-suite executives.",
-        imageUrl: "/projects/consult.jpg",
-        link: ""
+        title: "Collimator",
+        description: "Hosting a podcast exploring the future of technology and impact. We've featured over 30 guests—from founders to professors—discussing how young people can shape the world.",
+        imageUrl: "/projects/collimator.png",
+        link: "https://open.spotify.com/show/0CkPu2vTedCtzkTT8vDegj?si=bf253a16ac844ede" 
     },
     {
         title: "Speaking Engagements",
-        description: "Spoke at various conferences and venues around the world about my projects, including WebSummit, SXSW, The Change Leadership Conference, and the Toronto Microsoft HQ. Met some incredibly cool people along the way, like Brad Smith, Cathie Wood, Kelly Rutherford...",
+        description: "Shared my work at venues like WebSummit, SXSW, and Microsoft HQ. A great opportunity to connect with leaders in tech and discuss the future of innovation.",
         imageUrl: "/projects/speaking.jpg",
         link: "https://youtu.be/vShQhBSgw0k?si=HCcXeFD5EhIWSK8V"
+    },
+    {
+        title: "YouTube",
+        description: "Documenting my learning process and projects. Videos cover quantum computing, global development challenges, and personal reflections on navigating early adulthood.",
+        imageUrl: "/projects/yt.png",
+        link: "https://www.youtube.com/@alexanderyevchenko" 
     },
 ];
 
@@ -78,10 +90,32 @@ export default function ProjectsSection() {
                     <div key={index} className="flex flex-col border rounded-lg overflow-hidden shadow-md w-full">
                         {project.link ? (
                             <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                                <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
+                                <img 
+                                    src={project.imageUrl} 
+                                    alt={project.title} 
+                                    className="w-full h-48 object-cover"
+                                    style={
+                                        project.title.includes("Middendorf") 
+                                            ? { objectPosition: "50% 35%" }
+                                        : project.title.includes("Student Consulting")
+                                            ? { objectPosition: "45% 45%" }
+                                        : undefined
+                                    }
+                                />
                             </Link>
                         ) : (
-                            <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
+                            <img 
+                                src={project.imageUrl} 
+                                alt={project.title} 
+                                className="w-full h-48 object-cover"
+                                style={
+                                    project.title.includes("Middendorf") 
+                                        ? { objectPosition: "50% 35%" }
+                                    : project.title.includes("Student Consulting")
+                                        ? { objectPosition: "45% 45%" }
+                                    : undefined
+                                }
+                            />
                         )}
                         <div className="p-4">
                             <h3 className="text-lg font-600 tracking-wide">{project.title}</h3>

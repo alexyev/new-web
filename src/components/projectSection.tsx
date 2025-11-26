@@ -35,8 +35,8 @@ const projects = [
     {
         title: "AceGlass",
         description: "HoyaHacks '25 (Georgetown) AceGlass are the ultimate pair of interactive poker glasses, with live winning percentages and betting strategies, keeping you on point with every hand.",
-        imageUrl: "/projects/clara.jpg",
-        link: "https://www.claraprep.co/" 
+        imageUrl: "/projects/ace.jpg",
+        link: "https://devpost.com/software/ace-7kpg46?_gl=1*1jcw67p*_gcl_au*NzYxMDkxODgxLjE3NjQxNjMwNTU.*_ga*MTIwODU0MDI3NC4xNzY0MTYzMDU1*_ga_0YHJK3Y10M*czE3NjQxNjMwNTUkbzEkZzEkdDE3NjQxNjMwNjAkajU1JGwwJGgw" 
     },
     {
         title: "UNC Applied Engineering Lab",

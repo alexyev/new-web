@@ -2,25 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* Force dark mode for the website */
 :root {
-  --background: #14223a;
-  --foreground: #f2e9e4;
+  --background: #F7F3EE;
+  --foreground: #1C1915;
+  --accent: #C9ADA7;
+  --muted: #8A7E7A;
+  --border: #E5DDD5;
 }
 
-/* Force dark mode for the website */
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #ffffff;
-    --foreground: #171717;
-  }
-}
-
-
-/* Figure out a good, classy font */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-lora) Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  line-height: 1.6;
 }
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Page-load reveal animations ── */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes draw-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes reveal-right {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.anim-reveal-up {
+  opacity: 0;
+  animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.anim-reveal-scale {
+  opacity: 0;
+  animation: reveal-scale 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.anim-reveal-left {
+  opacity: 0;
+  animation: reveal-left 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.anim-reveal-right {
+  opacity: 0;
+  animation: reveal-right 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.anim-draw-line {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: draw-line 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.anim-delay-1 { animation-delay: 0.08s; }
+.anim-delay-2 { animation-delay: 0.16s; }
+.anim-delay-3 { animation-delay: 0.24s; }
+.anim-delay-4 { animation-delay: 0.34s; }
+.anim-delay-5 { animation-delay: 0.44s; }
+.anim-delay-6 { animation-delay: 0.54s; }
+.anim-delay-7 { animation-delay: 0.64s; }
+.anim-delay-8 { animation-delay: 0.76s; }
+.anim-delay-9 { animation-delay: 0.88s; }
+.anim-delay-10 { animation-delay: 1.0s; }
+
+/* Stagger children — apply to parent, children auto-cascade */
+.anim-stagger > * {
+  opacity: 0;
+  animation: reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.anim-stagger > *:nth-child(1) { animation-delay: 0.3s; }
+.anim-stagger > *:nth-child(2) { animation-delay: 0.38s; }
+.anim-stagger > *:nth-child(3) { animation-delay: 0.46s; }
+.anim-stagger > *:nth-child(4) { animation-delay: 0.54s; }
+.anim-stagger > *:nth-child(5) { animation-delay: 0.62s; }
+.anim-stagger > *:nth-child(6) { animation-delay: 0.70s; }
+.anim-stagger > *:nth-child(7) { animation-delay: 0.78s; }
+.anim-stagger > *:nth-child(8) { animation-delay: 0.86s; }
+.anim-stagger > *:nth-child(9) { animation-delay: 0.94s; }
+.anim-stagger > *:nth-child(10) { animation-delay: 1.02s; }

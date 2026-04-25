@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Lora } from 'next/font/google'
+import { Inter, Cormorant_Garamond } from 'next/font/google'
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-const lora = Lora({ 
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-lora',
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  variable: '--font-cormorant',
+  weight: ['300', '400', '500', '600'],
   display: 'swap',
 })
 
@@ -12,7 +21,7 @@ export const metadata: Metadata = {
   title: "Alexander Yevchenko",
   description: "Alexander Yevchenko's Personal Website",
   icons: {
-    icon: "/favicon/favicon.ico", // Update this path if your favicon is named differently or located elsewhere
+    icon: "/favicon/favicon.ico",
   },
 };
 
@@ -23,10 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${lora.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

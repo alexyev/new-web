@@ -137,6 +137,12 @@ export const books: Book[] = [
     cover: "/books/on-the-road.jpg",
   },
   {
+    title: "When We Cease to Understand the World",
+    author: "Benjamín Labatut",
+    authorLast: "Labatut",
+    cover: "/books/when_we_cease_to_understand_the_world.jpeg",
+  },
+  {
     title: "Of Human Bondage",
     author: "W. Somerset Maugham",
     authorLast: "Maugham",

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { HiArrowUpRight } from 'react-icons/hi2';
 import type { Experience } from '@/data/experiences';
+import { BLUR_DATA_URL } from '@/lib/images';
 
 interface ExperienceCardProps {
   experience: Experience;
@@ -30,6 +31,8 @@ function CardLayout({ experience, index }: { experience: Experience; index: numb
           fitContain ? "object-contain" : "object-cover"
         } transition-transform duration-[600ms] group-hover:scale-[1.02]`}
         sizes="(max-width: 768px) 100vw, 32vw"
+        placeholder="blur"
+        blurDataURL={BLUR_DATA_URL}
       />
     </div>
   ) : (

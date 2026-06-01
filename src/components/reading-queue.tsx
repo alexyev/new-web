@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type { Book } from '@/data/books';
+import { BLUR_DATA_URL } from '@/lib/images';
 
 interface ReadingQueueProps {
   current: Book[];
@@ -36,6 +37,8 @@ export default function ReadingQueue({ current, next }: ReadingQueueProps) {
                     fill
                     className="object-cover"
                     sizes="104px"
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
                   />
                 </div>
                 <div className="flex-1 min-w-0 pt-0.5">
@@ -91,6 +94,8 @@ export default function ReadingQueue({ current, next }: ReadingQueueProps) {
                     fill
                     className="object-cover"
                     sizes="52px"
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
                   />
                 </div>
                 <div className="flex-1 min-w-0 pt-1">

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { books } from '@/data/books';
+import { BLUR_DATA_URL } from '@/lib/images';
 
 export default function BookGrid() {
   return (
@@ -15,6 +16,8 @@ export default function BookGrid() {
             fill
             className="object-cover"
             sizes="(max-width: 640px) 25vw, (max-width: 1024px) 20vw, 150px"
+            placeholder="blur"
+            blurDataURL={BLUR_DATA_URL}
           />
 
           {/* Hover overlay — title and author fade in */}

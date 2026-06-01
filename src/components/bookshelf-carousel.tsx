@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { books as defaultBooks, type Book } from '@/data/books';
+import { BLUR_DATA_URL } from '@/lib/images';
 
 const BOOK_W = 170;
 const BOOK_H = 255;
@@ -123,7 +124,7 @@ export default function BookshelfCarousel({ books = defaultBooks }: BookshelfCar
         scrollToIndex(activeIndex + 1);
       }
     },
-    [activeIndex, scrollToIndex],
+    [activeIndex, scrollToIndex, books.length],
   );
 
   const activeBook = books[activeIndex];
@@ -197,6 +198,8 @@ export default function BookshelfCarousel({ books = defaultBooks }: BookshelfCar
                     sizes={`${BOOK_W}px`}
                     draggable={false}
                     priority={dist <= 1}
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
                   />
                 </div>
               </div>

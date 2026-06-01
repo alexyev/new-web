@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { HiArrowUpRight } from 'react-icons/hi2';
 import type { Project } from '@/data/projects';
+import { BLUR_DATA_URL } from '@/lib/images';
 
 interface ProjectCardProps {
   project: Project;
@@ -51,6 +52,8 @@ function HeroCard({ project }: { project: Project }) {
           className="object-cover transition-transform duration-[600ms] group-hover:scale-[1.02]"
           sizes="(max-width: 1024px) 100vw, 56vw"
           priority
+          placeholder="blur"
+          blurDataURL={BLUR_DATA_URL}
         />
       </div>
 
@@ -135,6 +138,8 @@ function FeatureCard({ project }: { project: Project }) {
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
           sizes="(max-width: 768px) 100vw, 50vw"
+          placeholder="blur"
+          blurDataURL={BLUR_DATA_URL}
         />
       </div>
       <div className="px-6 py-5 flex-1 flex flex-col">
@@ -193,6 +198,8 @@ function SupportingCard({ project }: { project: Project }) {
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           sizes="(max-width: 640px) 100vw, 38vw"
+          placeholder="blur"
+          blurDataURL={BLUR_DATA_URL}
         />
       </div>
 

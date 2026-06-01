@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { articles } from '@/data/writing';
+import { BLUR_DATA_URL } from '@/lib/images';
 
 export default function Writing() {
   return (
@@ -31,6 +32,8 @@ export default function Writing() {
                     className="object-cover"
                     style={{ objectPosition: article.imagePosition ?? 'top' }}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
                   />
                 ) : (
                   <div className="absolute inset-0 bg-border/50 flex items-center justify-center">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import { Inter, Cormorant_Garamond } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
@@ -37,11 +37,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <Script
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          strategy="afterInteractive"
-          data-cf-beacon='{"token": "c64495f3df0744099a262a85cdb3a7c7"}'
-        />
+        <Analytics />
       </body>
     </html>
   );

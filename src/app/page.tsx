@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BLUR_DATA_URL } from "@/lib/images";
 import { FaLinkedinIn, FaGithub, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { SiSubstack } from 'react-icons/si';
 import { HiEnvelope } from 'react-icons/hi2';
@@ -55,6 +56,9 @@ export default function Home() {
             width={170}
             height={170}
             className="rounded-md object-cover"
+            priority
+            placeholder="blur"
+            blurDataURL={BLUR_DATA_URL}
           />
         </div>
       </section>

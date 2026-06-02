@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // Prefer AVIF, fall back to WebP — smaller payloads for modern browsers.
+    formats: ["image/avif", "image/webp"],
     // Remote hosts allowed for next/image optimization (writing-page article covers).
     remotePatterns: [
       { protocol: "https", hostname: "substackcdn.com" },

@@ -14,7 +14,7 @@ export default function Writing() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-8 anim-stagger">
-          {articles.map((article) => (
+          {articles.map((article, i) => (
             <a
               key={article.url}
               href={article.url}
@@ -32,6 +32,8 @@ export default function Writing() {
                     className="object-cover"
                     style={{ objectPosition: article.imagePosition ?? 'top' }}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    /* Eager-load the first row (above the fold) so the LCP cover isn't lazy-loaded */
+                    priority={i < 3}
                     placeholder="blur"
                     blurDataURL={BLUR_DATA_URL}
                   />

@@ -79,55 +79,64 @@ body {
   }
 }
 
-.anim-reveal-up {
-  opacity: 0;
-  animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
+/*
+ * Reveal animations are gated behind `prefers-reduced-motion: no-preference`.
+ * Because each rule starts content at `opacity: 0`, FCP/LCP can't fire until the
+ * element animates in — so users who opt out of motion (and the elements they'd
+ * otherwise wait on) render fully visible immediately. Delays are kept short
+ * (≤0.4s) so even the animated path doesn't hold above-the-fold content back.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .anim-reveal-up {
+    opacity: 0;
+    animation: reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
 
-.anim-reveal-scale {
-  opacity: 0;
-  animation: reveal-scale 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
+  .anim-reveal-scale {
+    opacity: 0;
+    animation: reveal-scale 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
 
-.anim-reveal-left {
-  opacity: 0;
-  animation: reveal-left 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
+  .anim-reveal-left {
+    opacity: 0;
+    animation: reveal-left 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
 
-.anim-reveal-right {
-  opacity: 0;
-  animation: reveal-right 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
+  .anim-reveal-right {
+    opacity: 0;
+    animation: reveal-right 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
 
-.anim-draw-line {
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: draw-line 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
+  .anim-draw-line {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: draw-line 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
 
-.anim-delay-1 { animation-delay: 0.08s; }
-.anim-delay-2 { animation-delay: 0.16s; }
-.anim-delay-3 { animation-delay: 0.24s; }
-.anim-delay-4 { animation-delay: 0.34s; }
-.anim-delay-5 { animation-delay: 0.44s; }
-.anim-delay-6 { animation-delay: 0.54s; }
-.anim-delay-7 { animation-delay: 0.64s; }
-.anim-delay-8 { animation-delay: 0.76s; }
-.anim-delay-9 { animation-delay: 0.88s; }
-.anim-delay-10 { animation-delay: 1.0s; }
+  .anim-delay-1 { animation-delay: 0.04s; }
+  .anim-delay-2 { animation-delay: 0.08s; }
+  .anim-delay-3 { animation-delay: 0.12s; }
+  .anim-delay-4 { animation-delay: 0.16s; }
+  .anim-delay-5 { animation-delay: 0.20s; }
+  .anim-delay-6 { animation-delay: 0.24s; }
+  .anim-delay-7 { animation-delay: 0.28s; }
+  .anim-delay-8 { animation-delay: 0.32s; }
+  .anim-delay-9 { animation-delay: 0.36s; }
+  .anim-delay-10 { animation-delay: 0.40s; }
 
-/* Stagger children — apply to parent, children auto-cascade */
-.anim-stagger > * {
-  opacity: 0;
-  animation: reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  /* Stagger children — apply to parent, children auto-cascade */
+  .anim-stagger > * {
+    opacity: 0;
+    animation: reveal-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .anim-stagger > *:nth-child(1) { animation-delay: 0.05s; }
+  .anim-stagger > *:nth-child(2) { animation-delay: 0.10s; }
+  .anim-stagger > *:nth-child(3) { animation-delay: 0.15s; }
+  .anim-stagger > *:nth-child(4) { animation-delay: 0.20s; }
+  .anim-stagger > *:nth-child(5) { animation-delay: 0.24s; }
+  .anim-stagger > *:nth-child(6) { animation-delay: 0.28s; }
+  .anim-stagger > *:nth-child(7) { animation-delay: 0.31s; }
+  .anim-stagger > *:nth-child(8) { animation-delay: 0.34s; }
+  .anim-stagger > *:nth-child(9) { animation-delay: 0.37s; }
+  .anim-stagger > *:nth-child(10) { animation-delay: 0.40s; }
 }
-.anim-stagger > *:nth-child(1) { animation-delay: 0.3s; }
-.anim-stagger > *:nth-child(2) { animation-delay: 0.38s; }
-.anim-stagger > *:nth-child(3) { animation-delay: 0.46s; }
-.anim-stagger > *:nth-child(4) { animation-delay: 0.54s; }
-.anim-stagger > *:nth-child(5) { animation-delay: 0.62s; }
-.anim-stagger > *:nth-child(6) { animation-delay: 0.70s; }
-.anim-stagger > *:nth-child(7) { animation-delay: 0.78s; }
-.anim-stagger > *:nth-child(8) { animation-delay: 0.86s; }
-.anim-stagger > *:nth-child(9) { animation-delay: 0.94s; }
-.anim-stagger > *:nth-child(10) { animation-delay: 1.02s; }

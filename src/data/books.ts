@@ -41,6 +41,12 @@ export const books: Book[] = [
     cover: "/books/fahrenheit-451.jpg",
   },
   {
+    title: "Jane Eyre",
+    author: "Charlotte Brontë",
+    authorLast: "Brontë",
+    cover: "/books/jane_eyre.jpg",
+  },
+  {
     title: "No Longer Human",
     author: "Osamu Dazai",
     authorLast: "Dazai",

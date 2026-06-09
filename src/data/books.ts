@@ -95,6 +95,12 @@ export const books: Book[] = [
     cover: "/books/the-idea-factory.jpg",
   },
   {
+    title: "A Farewell to Arms",
+    author: "Ernest Hemingway",
+    authorLast: "Hemingway",
+    cover: "/books/a-farewell-to-arms.jpg",
+  },
+  {
     title: "For Whom the Bell Tolls",
     author: "Ernest Hemingway",
     authorLast: "Hemingway",
@@ -137,6 +143,12 @@ export const books: Book[] = [
     cover: "/books/dubliners.jpg",
   },
   {
+    title: "A Portrait of the Artist as a Young Man",
+    author: "James Joyce",
+    authorLast: "Joyce",
+    cover: "/books/a-portrait-of-the-artist-as-a-young-man.jpg",
+  },
+  {
     title: "On the Road",
     author: "Jack Kerouac",
     authorLast: "Kerouac",
@@ -165,6 +177,12 @@ export const books: Book[] = [
     author: "Ian McEwan",
     authorLast: "McEwan",
     cover: "/books/atonement.jpg",
+  },
+  {
+    title: "Kafka on the Shore",
+    author: "Haruki Murakami",
+    authorLast: "Murakami",
+    cover: "/books/kafka-on-the-shore.jpg",
   },
   {
     title: "Norwegian Wood",
@@ -251,10 +269,10 @@ export const currentlyReading: Book[] = [
     cover: "/books/guns-germs-and-steel.jpg",
   },
   {
-    title: "A Portrait of the Artist as a Young Man",
-    author: "James Joyce",
-    authorLast: "Joyce",
-    cover: "/books/a-portrait-of-the-artist-as-a-young-man.jpg",
+    title: "The Year of Magical Thinking",
+    author: "Joan Didion",
+    authorLast: "Didion",
+    cover: "/books/the-year-of-magical-thinking.jpg",
   },
 ];
 

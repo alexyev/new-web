@@ -71,6 +71,12 @@ export const books: Book[] = [
     cover: "/books/play-it-as-it-lays.jpg",
   },
   {
+    title: "The Year of Magical Thinking",
+    author: "Joan Didion",
+    authorLast: "Didion",
+    cover: "/books/the-year-of-magical-thinking.jpg",
+  },
+  {
     title: "Crime and Punishment",
     author: "Fyodor Dostoevsky",
     authorLast: "Dostoevsky",
@@ -269,10 +275,10 @@ export const currentlyReading: Book[] = [
     cover: "/books/guns-germs-and-steel.jpg",
   },
   {
-    title: "The Year of Magical Thinking",
-    author: "Joan Didion",
-    authorLast: "Didion",
-    cover: "/books/the-year-of-magical-thinking.jpg",
+    title: "One Hundred Years of Solitude",
+    author: "Gabriel García Márquez",
+    authorLast: "García Márquez",
+    cover: "/books/one_hundred_years.jpg",
   },
 ];
 

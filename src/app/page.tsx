@@ -71,10 +71,10 @@ export default function Home() {
         <div className="pl-5 border-l-2 border-accent/50 anim-reveal-up anim-delay-6">
           <p className="text-xs text-muted uppercase tracking-widest mb-3">Now</p>
           <p className="text-sm text-foreground/75 leading-relaxed max-w-prose">
-            <span className="font-medium text-foreground/90">Spring 2026:</span>{" "}
-            Studying abroad at the National University of Singapore. Preparing for a
-            summer internship at Boomitra in Buenos Aires. Recruiting for quant and
-            CS roles for Summer 2027.
+            <span className="font-medium text-foreground/90">Fall 2026:</span>{" "}
+            Recruiting for SWE roles and building out Engineering@Carolina,
+            including fundme, an internal funding database, and a systematic
+            equity backtesting platform.
           </p>
         </div>
       </section>

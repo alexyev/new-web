@@ -95,6 +95,12 @@ export const books: Book[] = [
     cover: "/books/the-great-gatsby.jpg",
   },
   {
+    title: "Madame Bovary",
+    author: "Gustave Flaubert",
+    authorLast: "Flaubert",
+    cover: "/books/madame-bovary.jpg",
+  },
+  {
     title: "The Idea Factory",
     author: "Jon Gertner",
     authorLast: "Gertner",
@@ -177,6 +183,12 @@ export const books: Book[] = [
     author: "Guy de Maupassant",
     authorLast: "Maupassant",
     cover: "/books/bel-ami.jpg",
+  },
+  {
+    title: "Blood Meridian",
+    author: "Cormac McCarthy",
+    authorLast: "McCarthy",
+    cover: "/books/blood-meridian.jpg",
   },
   {
     title: "Atonement",
@@ -263,22 +275,10 @@ export const books: Book[] = [
 // a free-form date. Leave empty array if nothing currently active.
 export const currentlyReading: Book[] = [
   {
-    title: "Madame Bovary",
-    author: "Gustave Flaubert",
-    authorLast: "Flaubert",
-    cover: "/books/madame-bovary.jpg",
-  },
-  {
     title: "Guns, Germs, and Steel",
     author: "Jared Diamond",
     authorLast: "Diamond",
     cover: "/books/guns-germs-and-steel.jpg",
-  },
-  {
-    title: "One Hundred Years of Solitude",
-    author: "Gabriel García Márquez",
-    authorLast: "García Márquez",
-    cover: "/books/one_hundred_years.jpg",
   },
 ];
 

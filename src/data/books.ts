@@ -280,6 +280,18 @@ export const currentlyReading: Book[] = [
     authorLast: "Diamond",
     cover: "/books/guns-germs-and-steel.jpg",
   },
+  {
+    title: "Faust",
+    author: "Johann Wolfgang von Goethe",
+    authorLast: "Goethe",
+    cover: "/books/faust.jpg",
+  },
+  {
+    title: "The Last Man Who Knew Everything",
+    author: "Andrew Robinson",
+    authorLast: "Robinson",
+    cover: "/books/the-last-man-who-knew-everything.jpg",
+  },
 ];
 
 // Books queued to read next. Order matters — top of the list is next up.

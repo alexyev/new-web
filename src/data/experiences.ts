@@ -12,6 +12,16 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    role: "Carbon Credits Intern",
+    company: "Boomitra",
+    period: "Summer 2026",
+    location: "Buenos Aires, Argentina",
+    description:
+      "Worked directly with the Lead Scientist at Boomitra, an Earthshot Prize winner that pays farmers for carbon stored in their soil. Audited carbon credit issuance across Latin America with a Python pipeline that extracted data from ~200 project files. Built analysis tools and ran zonal statistics on ERA5-Land climate rasters to find what drives soil carbon sequestration; one key finding updated the weights of Boomitra's internal model.",
+    link: "https://boomitra.com/",
+    image: "/projects/boomitra.jpg",
+  },
+  {
     role: "Undergraduate Learning Assistant",
     company: "UNC Department of Computer Science",
     period: "2026",
@@ -21,12 +31,13 @@ export const experiences: Experience[] = [
     image: "/projects/unccs.png",
   },
   {
-    role: "Director of Professional Development",
+    role: "Vice-President of Professional Development",
     company: "Engineering @ Carolina",
     period: "2026",
     location: "Chapel Hill, NC",
     description:
-      "Inaugural Director of Professional Development for Carolina's first and premier engineering club, associated with the Department of Applied Physical Sciences. Organized career workshops with Tesla, engineering challenges with RTP companies, and secured funding for the club.",
+      "Inaugural Vice-President of Professional Development for Carolina's first and premier engineering club, associated with the Department of Applied Physical Sciences. Organized career workshops with Tesla, engineering challenges with RTP companies, and secured funding for the club.",
+    link: "https://www.engineeringatcarolina.org/",
     image: "/projects/eatc.jpg",
     imageFit: "contain",
   },

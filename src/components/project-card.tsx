@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { HiArrowUpRight } from 'react-icons/hi2';
 import type { Project } from '@/data/projects';
+import HoverVideo from '@/components/hover-video';
 import { BLUR_DATA_URL } from '@/lib/images';
 
 interface ProjectCardProps {
@@ -55,6 +56,12 @@ function HeroCard({ project }: { project: Project }) {
           placeholder="blur"
           blurDataURL={BLUR_DATA_URL}
         />
+        {project.video && (
+          <HoverVideo
+            src={project.video}
+            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
+          />
+        )}
       </div>
 
       {/* Content column */}
@@ -141,6 +148,12 @@ function FeatureCard({ project }: { project: Project }) {
           placeholder="blur"
           blurDataURL={BLUR_DATA_URL}
         />
+        {project.video && (
+          <HoverVideo
+            src={project.video}
+            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
+          />
+        )}
       </div>
       <div className="px-6 py-5 flex-1 flex flex-col">
         {meta && (
@@ -201,6 +214,12 @@ function SupportingCard({ project }: { project: Project }) {
           placeholder="blur"
           blurDataURL={BLUR_DATA_URL}
         />
+        {project.video && (
+          <HoverVideo
+            src={project.video}
+            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300"
+          />
+        )}
       </div>
 
       <div className="flex-1 flex flex-col justify-center py-1 sm:py-4">

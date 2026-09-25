@@ -12,6 +12,16 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    role: "Technical Chair",
+    company: "AI @ UNC",
+    period: "2026–Present",
+    location: "Chapel Hill, NC",
+    description:
+      "Technical Chair at Carolina's premier student organization for AI and machine learning. Lead the team building SkyJEPA, a JEPA-style latent world model that learns from both camera frames and flight telemetry to control a custom quadrotor's motors, with the goal of zero-shot sim-to-real transfer. Own the technical roadmap, from an in-house drone build on PX4 to the custom simulation environment that generates our training data.",
+    link: "https://www.ai-unc.com/",
+    image: "/projects/aiunc.jpg",
+  },
+  {
     role: "Carbon Credits Intern",
     company: "Boomitra",
     period: "Summer 2026",

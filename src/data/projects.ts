@@ -8,6 +8,7 @@ export interface Project {
   description: string;
   oneLiner?: string; // pithy pull-quote for hero treatment
   image: string;
+  video?: string; // short muted demo clip (e.g. "/projects/fundme/demo.mp4") that plays over the image on hover
   link?: string;
   tags: string[];
   label?: string; // short context/funding badge (used on supporting cards)
@@ -34,6 +35,21 @@ export const projects: Project[] = [
       { label: "Backing", value: "Emergent Ventures · Iris Project · Rideau Hall Foundation" },
     ],
     tier: "hero",
+    featured: true,
+    category: "technical",
+  },
+  {
+    title: "fundme",
+    description:
+      "A members-only funding directory for Engineering@Carolina: every grant, investor, and pitch competition a student founder at UNC might need, kept current by the club.",
+    image: "/projects/fundme/cover.jpg",
+    video: "/projects/fundme/demo.mp4",
+    link: "https://www.engineeringatcarolina.org/#funding",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Supabase Auth"],
+    year: "2026",
+    role: "Builder",
+    status: "Live",
+    tier: "feature",
     featured: true,
     category: "technical",
   },

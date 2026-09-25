@@ -26,7 +26,7 @@ export default function Projects() {
       {/* ── Features ── */}
       {features.length > 0 && (
         <section className="pt-4 pb-16 border-t border-border anim-draw-line anim-delay-3">
-          <div className="pt-12 flex flex-wrap justify-start gap-8 anim-stagger">
+          <div className="pt-12 flex flex-wrap justify-center gap-8 anim-stagger">
             {features.map((p) => (
               <ProjectCard key={p.title} project={p} variant="feature" />
             ))}

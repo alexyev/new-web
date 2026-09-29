@@ -107,6 +107,19 @@ export const projects: Project[] = [
     category: "technical",
   },
   {
+    title: "Schoolscape",
+    description:
+      "An interactive map of community stress around all 23,595 US public high schools, built on Johns Hopkins' ODIS data. A Python pipeline recovered 99.98% of spreadsheet-corrupted school IDs and ran national and regional analyses, and a plain-English \"Ask the map\" bar, powered by Jev (TypeSafe AI) with a Claude Haiku fallback, lets anyone query it.",
+    image: "/projects/schoolscape.jpg",
+    link: "https://schoolscape.alexanderyevchenko.com",
+    tags: ["Python", "GeoPandas", "React", "MapLibre", "deck.gl", "Jev"],
+    year: "2026",
+    role: "Builder",
+    label: "Carolina Data Challenge '26 · 1st Place",
+    tier: "supporting",
+    category: "hackathon",
+  },
+  {
     title: "AceGlass",
     description:
       "The ultimate interactive poker glasses with live winning percentages and betting strategies.",

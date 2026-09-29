@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     title: "Cultura",
     description:
-      "Co-founded an app delivering crop phenology and financial tools to small-scale farmers. Placed in Buildspace's S5 Top 32. Backed by Emergent Ventures and The Iris Project.",
+      "Co-founded an app delivering crop phenology and financial tools to small-scale farmers. It started as a hackathon project, placed in Buildspace's S5 Top 32, and was presented at WebSummit Lisbon and SXSW. Backed by Emergent Ventures and The Iris Project.",
     oneLiner: "Crop phenology for farmers who can't afford to be wrong.",
     image: "/projects/cultura.jpg",
     tags: ["React Native", "ML", "Agriculture", "Startup"],
@@ -41,7 +41,7 @@ export const projects: Project[] = [
   {
     title: "fundme",
     description:
-      "A members-only funding directory for Engineering@Carolina: every grant, investor, and pitch competition a student founder at UNC might need, kept current by the club.",
+      "A members-only funding directory for Engineering@Carolina: every grant, investor, and pitch competition a student founder at UNC might need, kept current by the club. Grants and investors are split by whether they take equity, pitch competitions cut across both, and only members an admin has approved can see any of it.",
     image: "/projects/fundme/cover.jpg",
     video: "/projects/fundme/demo.mp4",
     link: "https://www.engineeringatcarolina.org/#funding",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
   {
     title: "Collimator",
     description:
-      "Co-host of a podcast bringing together leaders in business, technology, and science to find the signal in the noise. 30+ episodes to date with guests ranging from founders to professors to investors.",
+      "Co-host of a podcast bringing together leaders in business, technology, and science to find the signal in the noise. 30+ episodes to date with guests ranging from founders to professors to investors like Harry Gandhi of 1517 Fund.",
     image: "/projects/collimator.png",
     link: "https://open.spotify.com/show/0CkPu2vTedCtzkTT8vDegj",
     tags: ["Podcast", "Media", "Interviews"],
@@ -83,7 +83,7 @@ export const projects: Project[] = [
   {
     title: "GPT from Scratch",
     description:
-      "Rebuilt a Shakespearean LLM to understand the architecture of GPT models, following Andrej Karpathy's curriculum.",
+      "Rebuilt a Shakespearean LLM to understand the architecture of GPT models, following Andrej Karpathy's curriculum: a character-level, 6-layer, 6-head transformer with 384-dimensional embeddings and a 256-character context, trained from scratch in PyTorch on Shakespeare's text.",
     image: "/projects/gpt.jpg",
     link: "https://github.com/alexyev/gpt-from-scratch",
     tags: ["Python", "PyTorch", "NLP", "Transformers"],
@@ -96,7 +96,7 @@ export const projects: Project[] = [
   {
     title: "Corn Disease Computer Vision",
     description:
-      "Researched food supply pressures from a first-principles perspective. Developed a computer vision algorithm for drones to identify and treat corn disease in real-time.",
+      "Researched food supply pressures from a first-principles perspective. Developed a computer vision algorithm for drones to identify and treat corn disease in real-time. A PyTorch CNN trained on PlantVillage leaf images tells healthy leaves apart from common rust, northern leaf blight, and gray leaf spot with about 92% test accuracy.",
     image: "/projects/cd.webp",
     link: "https://medium.com/@alexanderyevchenko/the-global-food-crisis-addressing-corn-disease-with-computer-vision-74edc76e949",
     tags: ["Computer Vision", "Python", "Agriculture"],
@@ -122,7 +122,7 @@ export const projects: Project[] = [
   {
     title: "AceGlass",
     description:
-      "The ultimate interactive poker glasses with live winning percentages and betting strategies.",
+      "The ultimate interactive poker glasses with live winning percentages and betting strategies. A camera on a Raspberry Pi 5 reads the cards with OpenCV, a hand evaluator scores them, and the GPT API speaks the next play into Bluetooth headphones.",
     image: "/projects/ace.jpg",
     link: "https://devpost.com/software/ace-7kpg46",
     tags: ["AR", "Computer Vision", "Real-time Processing"],
@@ -135,7 +135,7 @@ export const projects: Project[] = [
   {
     title: "Clara",
     description:
-      "An interactive, multilingual AI coach to help visa applicants prepare for interviews and navigate the immigration process.",
+      "An interactive, multilingual AI coach to help visa applicants prepare for interviews and navigate the immigration process. Applicants rehearse with Clara, a HeyGen video avatar powered by the GPT API, in a Next.js app.",
     image: "/projects/clara.jpg",
     link: "https://www.claraprep.co/",
     tags: ["AI", "NLP", "Immigration"],
@@ -148,7 +148,7 @@ export const projects: Project[] = [
   {
     title: "brAInstorm",
     description:
-      "Built a BCI that interprets brainwaves to generate artwork reflecting the user's emotional state.",
+      "Built a BCI that interprets brainwaves to generate artwork reflecting the user's emotional state. EEG from an OpenBCI headset streams through a Flask backend, and Midjourney paints the result.",
     image: "/projects/HTN.png",
     link: "https://youtu.be/r3z1rB29ZLU?si=d9o9UkN0tJxpzoO4",
     tags: ["BCI", "ML", "EEG", "Creative Tech"],

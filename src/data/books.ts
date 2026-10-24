@@ -35,6 +35,12 @@ export const books: Book[] = [
     cover: "/books/giovanni-s-room.jpg",
   },
   {
+    title: "The Nenoquich",
+    author: "Henry Bean",
+    authorLast: "Bean",
+    cover: "/books/the-nenoquich.jpg",
+  },
+  {
     title: "Fahrenheit 451",
     author: "Ray Bradbury",
     authorLast: "Bradbury",

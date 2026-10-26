@@ -57,7 +57,7 @@ export const experiences: Experience[] = [
     period: "2025",
     location: "Baltimore, MD",
     description:
-      "Studied how Baltimore's nonprofits navigate the city's permitting and grantmaking systems when running Education Capital Projects. Sat down with 47 nonprofit directors, grant officers, and city officials; ran sentiment analysis on the transcripts; and wrote the findings up for the foundation and its partners at France-Merrick, Weinberg, and Abell — collectively stewarding over $4B in AUM.",
+      "Studied how Baltimore's nonprofits navigate the city's permitting and grantmaking systems when running Education Capital Projects. Sat down with 47 nonprofit directors, grant officers, and city officials; ran sentiment analysis on the transcripts; and wrote the findings up for the foundation and its partners at France-Merrick, Weinberg, and Abell - collectively stewarding over $4B in AUM.",
     link: "https://www.middendorffoundation.org/",
     image: "/projects/middendorf.jpeg",
   },

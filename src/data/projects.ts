@@ -44,7 +44,7 @@ export const projects: Project[] = [
       "A members-only funding directory for Engineering@Carolina, with grants, investor connections, and an alumni database of where UNC engineers interned and ended up.",
     image: "/projects/fundme/cover.jpg",
     video: "/projects/fundme/demo.mp4",
-    link: "https://www.engineeringatcarolina.org/#funding",
+    link: "https://fundme.engineeringatcarolina.org",
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Supabase Auth"],
     year: "2026",
     role: "Builder",

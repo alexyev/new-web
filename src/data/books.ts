@@ -113,6 +113,12 @@ export const books: Book[] = [
     cover: "/books/the-idea-factory.jpg",
   },
   {
+    title: "Faust",
+    author: "Johann Wolfgang von Goethe",
+    authorLast: "Goethe",
+    cover: "/books/faust.jpg",
+  },
+  {
     title: "A Farewell to Arms",
     author: "Ernest Hemingway",
     authorLast: "Hemingway",
@@ -287,10 +293,10 @@ export const currentlyReading: Book[] = [
     cover: "/books/guns-germs-and-steel.jpg",
   },
   {
-    title: "Faust",
-    author: "Johann Wolfgang von Goethe",
-    authorLast: "Goethe",
-    cover: "/books/faust.jpg",
+    title: "Lord Jim at Home",
+    author: "Dinah Brooke",
+    authorLast: "Brooke",
+    cover: "/books/lord-jim-at-home.jpg",
   },
   {
     title: "The Last Man Who Knew Everything",
